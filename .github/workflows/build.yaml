@@ -1,4 +1,4 @@
-name: build bibliopro image
+name: build base image
 
 on:
   workflow_dispatch:
