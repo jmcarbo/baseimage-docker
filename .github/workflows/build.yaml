@@ -46,4 +46,4 @@ jobs:
       
       - name: Build docker images
         run: |
-          docker buildx build --push --platform linux/amd64,linux/arm64 -t registrynano1.imim.cloud/bibliopro:${{ steps.get_version.outputs.VERSION }} --file docker/bibliopro/Dockerfile ./docker/bibliopro
+          docker buildx build --push --platform linux/amd64,linux/arm64 -t ghcr.io/jmcarbo/baseimage:${{ steps.get_version.outputs.VERSION }} --file docker/bibliopro/Dockerfile ./docker/bibliopro
